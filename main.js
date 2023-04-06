@@ -7,8 +7,72 @@
 // Three arrays of objects containing fruits and the type of fruit they are
 // Need to add all of them together into one array of objects (horn of plenty) and sort them by their type and then alphabetically (the chief has OCD)
 // The chief likes to rummage and always picks the one right in the middle
+export const sortedArray = 
+[
+    {
+        "fruit": "Blueberries",
+        "classification": "Berry"
+    },
+    {
+        "fruit": "Cranberries",
+        "classification": "Berry"
+    },
+    {
+        "fruit": "Grapes",
+        "classification": "Berry"
+    },
+    {
+        "fruit": "Raspberries",
+        "classification": "Berry"
+    },
+    {
+        "fruit": "Strawberries",
+        "classification": "Berry"
+    },
+    {
+        "fruit": "Grapefruit",
+        "classification": "Citrus"
+    },
+    {
+        "fruit": "Lemon",
+        "classification": "Citrus"
+    },
+    {
+        "fruit": "Lime",
+        "classification": "Citrus"
+    },
+    {
+        "fruit": "Orange",
+        "classification": "Citrus"
+    },
+    {
+        "fruit": "Satsuma",
+        "classification": "Citrus"
+    },
+    {
+        "fruit": "Cherries",
+        "classification": "Drupe"
+    },
+    {
+        "fruit": "Coconut",
+        "classification": "Drupe"
+    },
+    {
+        "fruit": "Mango",
+        "classification": "Drupe"
+    },
+    {
+        "fruit": "Peach",
+        "classification": "Drupe"
+    },
+    {
+        "fruit": "Plum",
+        "classification": "Drupe"
+    }
+]
 
-let Sunki = 
+
+export const sunki = 
 [
     {
         fruit: "Lemon",
@@ -32,7 +96,7 @@ let Sunki =
     },
 ]
 
-let Waban = 
+export const waban = 
 [
     {
         fruit: "Cranberries",
@@ -56,7 +120,7 @@ let Waban =
     },
 ]
 
-let Aiyana = 
+export const aiyana = 
 [
     {
         fruit: "Blueberries",
@@ -81,21 +145,16 @@ let Aiyana =
 ]
 
 
-
-
-
 //👉 Write the function your CodeWarriors will start with below here:
 
+export let hornOfPlenty = [];
 
-function chooseAFruit(...args)
+export function chooseAFruit(...args)
 {
-    let hornOfPlenty = [];
-    // ANSWER
+    hornOfPlenty = [];
 
     args.forEach(arg => 
     {
-        // console.log(args.length);
-        // console.log(arg.length);
 
         for (let i = 0; i < arg.length; i++)
         {
@@ -116,8 +175,8 @@ function chooseAFruit(...args)
     console.log(hornOfPlenty);
 
     console.log(hornOfPlenty[7].fruit);
-    
-    // return hornOfPlenty[7].fruit;
+
+    return hornOfPlenty[7].fruit;
 }
 
-chooseAFruit(Sunki, Waban, Aiyana);
+// chooseAFruit(Sunki, Waban, Aiyana);
