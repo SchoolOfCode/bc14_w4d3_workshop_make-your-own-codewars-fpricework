@@ -1,10 +1,11 @@
 //  Import Jest and test function
 import { test, expect } from "@jest/globals";
-import { chooseAFruit, sunki, waban, aiyana, sortedArray, hornOfPlenty } from "./main.js";
+import { chooseAFruit, hornOfPlenty } from "./main.js";
+import { sunki, waban, aiyana, sortedArray } from "./extras.js";
 
 //👉 Write your tests below here:
 
-test("Test if Lime is returned", () =>
+test("Test if the correct fruit is returned", () =>
 {
     // ARRANGE
     const expected = "Lime";
